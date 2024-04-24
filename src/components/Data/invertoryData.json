@@ -1,0 +1,21 @@
+[
+    {
+      "image": "https://example.com/covers/book1.jpg",
+      "title": "JavaScript: The Good Parts",
+      "price": "$24.99",
+      "quantity": 10
+    },
+    {
+      "image": "https://example.com/covers/book2.jpg",
+      "title": "You Don't Know JS",
+      "price": "$34.99",
+      "quantity": 15
+    },
+    {
+      "image": "https://example.com/covers/book3.jpg",
+      "title": "Eloquent JavaScript",
+      "price": "$21.99",
+      "quantity": 8
+    }
+  ]
+  
