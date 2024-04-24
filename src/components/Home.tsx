@@ -31,7 +31,7 @@ const Home = () => {
               <img
                 src={item.image || "/static/images/coverNotFound.png"}
                 alt='Inventory Item Cover'
-                style={{ minWidth: "100px", minHeight: "150px" }}
+                style={{ maxWidth: "100px", maxHeight: "150px" }}
               />
               <div className='inventory-description'>
                 <p>
