@@ -1,56 +1,117 @@
 [
-    {
+  {
+    "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Mac Book Pro",
+    "price": "$2400.99",
+    "quantity": 10
+  },
+  {
+    "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "iphone",
+    "price": "$340.99",
+    "quantity": 15
+  },
+  {
+    "image": "https://images.pexels.com/photos/333984/pexels-photo-333984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Clasic tv",
+    "price": "$54.99",
+    "quantity": 15
+  },
+  {
+    "image": "https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "X box controller",
+    "price": "$40.99",
+    "quantity": 15
+  },
+  {
+    "image": "https://images.pexels.com/photos/1787220/pexels-photo-1787220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Canon DSLR Camera",
+    "price": "$749.99",
+    "quantity": 7
+  },
+  {
+    "image": "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Smart Home Speaker",
+    "price": "$199.99",
+    "quantity": 20
+  },
+  {
+    "image": "https://images.pexels.com/photos/19012059/pexels-photo-19012059/free-photo-of-a-gaming-laptop-and-headphones.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Gaming Laptop",
+    "price": "$1050.99",
+    "quantity": 6
+  },
+  {
+    "image": "https://images.pexels.com/photos/705675/pexels-photo-705675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Wireless Earbuds",
+    "price": "$129.99",
+    "quantity": 10
+  },
+  {
+    "image": "https://images.pexels.com/photos/214487/pexels-photo-214487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Black Samsung Android Smartphone",
+    "price": "$210.99",
+    "quantity": 8
+  },
+  {
       "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "Mac Book Pro",
-      "price": "$2400.99",
-      "quantity": 10
-    },
-    {
-      "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "iphone",
-      "price": "$340.99",
-      "quantity": 15
-    },
-    {
-      "image": "https://images.pexels.com/photos/333984/pexels-photo-333984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "Clasic tv",
-      "price": "$54.99",
-      "quantity": 15
-    },
-    {
-      "image": "https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "X box controler",
-      "price": "$40.99",
-      "quantity": 15
-    },
-    {
-      "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "iphone",
-      "price": "$340.99",
-      "quantity": 15
-    },
-    {
-      "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "iphone",
-      "price": "$340.99",
-      "quantity": 15
-    },
-    {
-      "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "iphone",
-      "price": "$340.99",
-      "quantity": 15
-    },    {
-      "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "iphone",
-      "price": "$340.99",
-      "quantity": 15
-    },
-    {
-      "image": "https://images.pexels.com/photos/214487/pexels-photo-214487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "title": "Black Samsung Android Smartphone",
-      "price": "$210.99",
+      "title": "Advanced Graphics Tablet",
+      "price": "$450.99",
       "quantity": 8
-    }
-  ]
-  
+  },
+  {
+      "image": "https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Smartphone Pro Max",
+      "price": "$1100.99",
+      "quantity": 12
+  },
+  {
+      "image": "https://images.pexels.com/photos/333984/pexels-photo-333984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Retro Sound System",
+      "price": "$120.99",
+      "quantity": 5
+  },
+  {
+      "image": "https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Wireless Gamepad",
+      "price": "$85.99",
+      "quantity": 10
+  },
+  {
+      "image": "https://images.pexels.com/photos/1787220/pexels-photo-1787220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Portable Photo Printer",
+      "price": "$199.99",
+      "quantity": 14
+  },
+  {
+      "image": "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "AI Home Assistant",
+      "price": "$349.99",
+      "quantity": 18
+  },
+  {
+      "image": "https://images.pexels.com/photos/19012059/pexels-photo-19012059/free-photo-of-a-gaming-laptop-and-headphones.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Elite Gaming Headset",
+      "price": "$130.99",
+      "quantity": 11
+  },
+  {
+      "image": "https://images.pexels.com/photos/705675/pexels-photo-705675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Noise Cancelling Earphones",
+      "price": "$250.99",
+      "quantity": 7
+  },
+  {
+      "image": "https://images.pexels.com/photos/214487/pexels-photo-214487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Smart Fitness Watch",
+      "price": "$199.99",
+      "quantity": 20
+  },
+  {
+      "image": "https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "Virtual Reality Set",
+      "price": "$400.99",
+      "quantity": 9
+  }
+]
+

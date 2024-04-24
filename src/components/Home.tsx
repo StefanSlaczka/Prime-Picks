@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Styles/Home.css";
-import inventoryData from './Data/invertoryData.json';
+import inventoryData from "./Data/invertoryData.json";
+import Search from "./Search";
+import { Link } from "react-router-dom";
 
 // Define the InventoryItem interface here
 interface InventoryItem {
@@ -18,11 +20,12 @@ const Home = () => {
   };
 
   useEffect(() => {
-    setInventory(inventoryData);
+    setInventory(inventoryData.slice(0, 9));
   }, []);
 
   return (
     <React.Fragment>
+      <Search />
       <h2>Prime Picks</h2>
       <div className='outer'>
         <div className='inventory-details'>
@@ -48,9 +51,7 @@ const Home = () => {
               </div>
             </div>
           ))}
-          <a href='display/1' className='see-all'>
-            View All
-          </a>
+          <Link to='/display'>View All</Link>
         </div>
       </div>
     </React.Fragment>
