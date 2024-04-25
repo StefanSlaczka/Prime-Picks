@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 // Define the InventoryItem interface here
 interface InventoryItem {
+  id: number;
   image?: string;
   title: string;
   price: string;
@@ -44,7 +45,7 @@ const Home = () => {
                   <br />
                   <strong>In Stock:</strong> {item.quantity}
                   <br />
-                  <Link to="/ViewDetials">View Detials</Link>
+                  <Link to={`/view-details/${item.id}`}>View Details</Link>
                   <br />
                   <button onClick={() => handleAddToCart(item)}>
                     Add to Cart

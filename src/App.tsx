@@ -13,7 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/display" element={<Display />} />
-          <Route path="ViewDetials" element={<ViewDetials/>}/>
+          <Route path="view-details/:id" element={<ViewDetials />} />
         </Routes>
       </React.Fragment>
     </Router>
