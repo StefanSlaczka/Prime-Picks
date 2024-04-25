@@ -33,14 +33,14 @@ const Display = () => {
   // Navigate to the next page
   const handleNext = () => {
     if (currentPage < totalPages) {
-      setCurrentPage(prevPage => prevPage + 1);
+      setCurrentPage((prevPage) => prevPage + 1);
     }
   };
 
   // Navigate to the previous page
   const handlePrev = () => {
     if (currentPage > 1) {
-      setCurrentPage(prevPage => prevPage - 1);
+      setCurrentPage((prevPage) => prevPage - 1);
     }
   };
 
@@ -48,16 +48,33 @@ const Display = () => {
     <React.Fragment>
       <Search />
       <h2>Prime Picks</h2>
-      <div className="outer">
-        <div className="inventory-details">
+      {/* Pagination component with Previous and Next buttons */}
+      <div className='pagination'>
+        {currentPage > 1 && <button onClick={handlePrev}>Previous</button>}
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+          (pageNumber) => (
+            <button
+              className='pagination-button'
+              key={pageNumber}
+              onClick={() => setCurrentPage(pageNumber)}
+              style={{ opacity: currentPage === pageNumber ? "60%" : "100%" }}
+            >
+              {pageNumber}
+            </button>
+          )
+        )}
+        {currentPage < totalPages && <button onClick={handleNext}>Next</button>}
+      </div>
+      <div className='outer'>
+        <div className='inventory-details'>
           {currentItems.map((item, index) => (
-            <div key={index} className="inventory-card outer">
+            <div key={index} className='inventory-card outer'>
               <img
                 src={item.image || "/static/images/coverNotFound.png"}
-                alt="Inventory Item Cover"
+                alt='Inventory Item Cover'
                 style={{ maxWidth: "100px", maxHeight: "150px" }}
               />
-              <div className="inventory-description">
+              <div className='inventory-description'>
                 <p>
                   <strong>Title:</strong> {item.title}
                   <br />
@@ -70,31 +87,25 @@ const Display = () => {
               </div>
             </div>
           ))}
-          <Link to="/display">View All</Link>
         </div>
       </div>
 
       {/* Pagination component with Previous and Next buttons */}
-      <div className="pagination">
-        {currentPage > 1 && (
-          <button onClick={handlePrev}>
-            Previous
-          </button>
-        )}
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNumber => (
+      <div className='pagination'>
+        {currentPage > 1 && <button onClick={handlePrev}>Previous</button>}
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+          (pageNumber) => (
             <button
-            key={pageNumber}
-            onClick={() => setCurrentPage(pageNumber)}
-            style={{ color: currentPage === pageNumber ? 'red' : 'black' }} // Conditional styling
-          >
-            {pageNumber}
-          </button>
-        ))}
-        {currentPage < totalPages && (
-          <button onClick={handleNext}>
-            Next
-          </button>
+              className='pagination-button'
+              key={pageNumber}
+              onClick={() => setCurrentPage(pageNumber)}
+              style={{ opacity: currentPage === pageNumber ? "60%" : "100%" }}
+            >
+              {pageNumber}
+            </button>
+          )
         )}
+        {currentPage < totalPages && <button onClick={handleNext}>Next</button>}
       </div>
     </React.Fragment>
   );
