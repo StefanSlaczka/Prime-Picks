@@ -4,13 +4,10 @@ import "./Styles/Search.css";
 const Search = () => {
   return (
     <React.Fragment>
-      <input type='text' name='query' placeholder='Search' />
-      <select name='search_type'>
-        <option value='title'>Title</option>
-        <option value='author'>Author</option>
-        <option value='genre'>Genre</option>
-      </select>
-      <button type='submit'>Search</button>
+      <div className='search-input'>
+        <input type='text' name='query' placeholder='Search' />
+        <button type='submit'>Search</button>
+      </div>
     </React.Fragment>
   );
 };
