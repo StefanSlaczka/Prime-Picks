@@ -11,7 +11,7 @@ const Navbar = () => {
         </Link>
       </a>
       <a href='login'>
-        <img alt='Login' />
+        Login
       </a>
     </div>
   );

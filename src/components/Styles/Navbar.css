@@ -22,3 +22,16 @@
     margin-right: 5px;
     transition: filter 0.3s;
 }
+
+/* CSS styles for larger screens */
+@media screen and (min-width: 3000px) {
+    .navbar {
+        font-size: 2rem;
+    }
+  }
+  
+  /* CSS styles for smaller screens */
+  @media screen and (max-width: 1080px) {
+
+  }
+  

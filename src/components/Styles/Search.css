@@ -14,7 +14,7 @@ input {
   flex-grow: 1; 
 }
 
-button {
+.search-button {
   padding: 12px;
   background-color: #4285f4;
   color: white;
@@ -32,11 +32,11 @@ button {
 }
 
 /* CSS styles for smaller screens */
-@media screen and (max-width: 1080px) {    
-  input, button {
+@media screen and (max-width: 1080px) {
+  input, .search-button {
     margin-top: 10px;
   }
-  button {
+  .search-button {
     width: 20%;
   }
 }

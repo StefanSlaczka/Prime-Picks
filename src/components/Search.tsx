@@ -6,7 +6,7 @@ const Search = () => {
     <React.Fragment>
       <div className='search-input'>
         <input type='text' name='query' placeholder='Search' />
-        <button type='submit'>Search</button>
+        <button className="search-button" type='submit'>Search</button>
       </div>
     </React.Fragment>
   );
