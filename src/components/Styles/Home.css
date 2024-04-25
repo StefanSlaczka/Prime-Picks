@@ -31,7 +31,7 @@ h2 {
   gap: 1%;
 }
 
-.book-card {
+.inventory-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,4 +47,37 @@ h2 {
 
 .pagination-button{
   margin: 0.1%;
+}
+
+/* CSS styles for larger screens */
+@media screen and (min-width: 3000px) {
+  h2,
+  p,
+  button {
+    font-size: 2rem;
+  }
+
+  ul {
+    font-size: 2rem;
+    margin-right: 20%;
+  }
+
+  .inventory-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* CSS styles for smaller screens */
+@media screen and (max-width: 1080px) {
+  .inventory-details {
+    display: block;
+  }
+
+  .inventory-card {
+    margin-bottom: 20px;
+  }
+  ul {
+    margin-right: 20%;
+  }
 }
