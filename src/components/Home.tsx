@@ -44,6 +44,8 @@ const Home = () => {
                   <br />
                   <strong>In Stock:</strong> {item.quantity}
                   <br />
+                  <Link to="/ViewDetials">View Detials</Link>
+                  <br />
                   <button onClick={() => handleAddToCart(item)}>
                     Add to Cart
                   </button>

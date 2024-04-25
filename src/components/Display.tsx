@@ -82,6 +82,8 @@ const Display = () => {
                   <br />
                   <strong>In Stock:</strong> {item.quantity}
                   <br />
+                  <Link to="/ViewDetials">View Detials</Link>
+                  <br />
                   <button>Add to Cart</button>
                 </p>
               </div>
