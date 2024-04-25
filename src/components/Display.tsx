@@ -18,7 +18,6 @@ const Display = () => {
   const [itemsPerPage, setItemsPerPage] = useState(18); // Number of items per page
 
   useEffect(() => {
-    console.log(inventoryData); // Check what is being imported
     setInventory(inventoryData);
   }, []);
 
@@ -31,11 +30,19 @@ const Display = () => {
   // Function to handle pagination (change page)
   const paginate = (pageNumber: number): void => setCurrentPage(pageNumber);
 
-  console.log("inventory length:", inventory.length); // Added console log
-  console.log("current page:", currentPage); // Added console log
-  console.log("items per page:", itemsPerPage); // Added console log
-  console.log("total pages:", totalPages); // Added console log
-  console.log("current items:", currentItems); // Added console log
+  // Navigate to the next page
+  const handleNext = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(prevPage => prevPage + 1);
+    }
+  };
+
+  // Navigate to the previous page
+  const handlePrev = () => {
+    if (currentPage > 1) {
+      setCurrentPage(prevPage => prevPage - 1);
+    }
+  };
 
   return (
     <React.Fragment>
@@ -67,14 +74,26 @@ const Display = () => {
         </div>
       </div>
 
-      {/* Pagination component (replace with your custom component) */}
+      {/* Pagination component with Previous and Next buttons */}
       <div className="pagination">
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-          (pageNumber) => (
-            <button key={pageNumber} onClick={() => paginate(pageNumber)}>
-              {pageNumber}
-            </button>
-          )
+        {currentPage > 1 && (
+          <button onClick={handlePrev}>
+            Previous
+          </button>
+        )}
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map(pageNumber => (
+            <button
+            key={pageNumber}
+            onClick={() => setCurrentPage(pageNumber)}
+            style={{ color: currentPage === pageNumber ? 'red' : 'black' }} // Conditional styling
+          >
+            {pageNumber}
+          </button>
+        ))}
+        {currentPage < totalPages && (
+          <button onClick={handleNext}>
+            Next
+          </button>
         )}
       </div>
     </React.Fragment>
