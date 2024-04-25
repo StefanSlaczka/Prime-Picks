@@ -45,7 +45,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.pagination-button{
+.pagination-button {
   margin: 0.1%;
 }
 button {
@@ -58,11 +58,29 @@ button {
   white-space: nowrap;
 }
 
+.item-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+  position: absolute;
+  width: 70%;
+  margin-left: 20%;
+  top: 10%;
+}
+
 /* CSS styles for larger screens */
 @media screen and (min-width: 3000px) {
   h2,
   p,
-  button {
+  button,
+  .right-column {
     font-size: 2rem;
   }
 
@@ -79,6 +97,12 @@ button {
 
 /* CSS styles for smaller screens */
 @media screen and (max-width: 1080px) {
+  .item-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .inventory-details {
     display: block;
   }
@@ -88,5 +112,8 @@ button {
   }
   ul {
     margin-right: 20%;
+  }
+  .right-column {
+    text-align: left;
   }
 }

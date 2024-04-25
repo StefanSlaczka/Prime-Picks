@@ -29,19 +29,26 @@ const ViewDetails = () => {
   }
 
   return (
-    <div className='item-details'>
-      <img
-        src={item.image || "/static/images/coverNotFound.png"}
-        alt='Detail Item Cover'
-        style={{ width: "200px", height: "300px" }}
-      />
-      <p>
-        <strong>{item.title}</strong>
-        <strong>Price:</strong> {item.price}
-        <strong>Quantity:</strong> {item.quantity}
-        <strong>Description:</strong> {item.description}
-      </p>
-    </div>
+    <React.Fragment>
+      <h1>Book Details</h1>
+      <div className='item-details'>
+        <div className='left-column'>
+          <img
+            src={item.image || "/static/images/coverNotFound.png"}
+            alt='Detail Item Cover'
+            style={{ width: "300px", height: "400px" }}
+          />
+        </div>
+        <div className='right-column'>
+          <p>
+            <strong>{item.title}</strong><br/>
+            <strong>Price:</strong> {item.price}<br/>
+            <strong>Quantity:</strong> {item.quantity}<br/>
+            <strong>Description:</strong> {item.description}
+          </p>
+        </div>
+      </div>
+    </React.Fragment>
   );
 };
 
