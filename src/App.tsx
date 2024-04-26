@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Display from "./components/Display";
 import ViewDetials from "./components/ViewDetials"
+import Login from "./components/Login";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/display" element={<Display />} />
           <Route path="view-details/:id" element={<ViewDetials />} />
         </Routes>

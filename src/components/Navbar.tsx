@@ -10,9 +10,9 @@ const Navbar = () => {
           <img src={require("./Images/home.png")} alt='Home' />
         </Link>
       </a>
-      <a href='login'>
+      <Link to='/login'>
         Login
-      </a>
+      </Link>
     </div>
   );
 };
