@@ -1,23 +1,5 @@
-{
-    "users": [
-      {
-        "id": 1,
-        "username": "admin",
-        "password": "secret",
-        "role": "administrator"
-      },
-      {
-        "id": 2,
-        "username": "user123",
-        "password": "password123",
-        "role": "user"
-      },
-      {
-        "id": 3,
-        "username": "guest",
-        "password": "guest",
-        "role": "guest"
-      }
-    ]
-  }
-  
+[
+  { "id": 1, "username": "admin", "password": "secret", "role": "administrator" },
+  { "id": 2, "username": "user123", "password": "password123", "role": "user" },
+  { "id": 3, "username": "guest", "password": "guest", "role": "guest" }
+]

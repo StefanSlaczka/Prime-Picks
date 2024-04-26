@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import userData from './Data/userData.json';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -11,14 +12,17 @@ function Login() {
 
     // Basic validation
     if (!username || !password) {
-      setErrorMessage('Please enter username and password');
+      setErrorMessage('Please enter both username and password');
       return;
     }
 
-    // Simulate login (replace with your API call)
-    if (username === 'admin' && password === 'secret') {
+    // Check against the userData imported from JSON
+    const user = userData.find(u => u.username === username && u.password === password);
+
+    if (user) {
       // Login successful
-      // Redirect or handle successful login (e.g., store JWT token)
+      console.log("Login successful:", user);
+      // Redirect or handle successful login here (e.g., store JWT token, update context)
     } else {
       setErrorMessage('Invalid username or password');
     }
